@@ -14,11 +14,11 @@ public class ex06 {
 		int[] n = { 3, 1, 4,5 };
 		int a;
 		for (int i = 0; i<4; i++) {
-			for (int i1 = i+1; i1 < n.length; i1++) {
-				if (n[i] < n[i1]) {
-					a = n[i1];
-					n[i1] = n[i];
-					n[i]= a;
+			for (int j = 0; j < 4-i-1; j++) {
+				if (n[j] < n[j+1]) {
+					a = n[j+1];
+					n[j+1] = n[j];
+					n[j]= a;
 				}
 			}
 		}
